@@ -4,7 +4,7 @@ Application web qui restaure et colorise automatiquement les photos anciennes gr
 
 ## 🎥 Démonstration
 
-> Démo vidéo à ajouter
+![Démo vidéo](demo/demo.mp4)
 
 ## 📸 Captures d'écran
 
