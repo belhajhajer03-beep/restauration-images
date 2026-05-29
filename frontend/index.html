@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauration d'Images Anciennes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Restauration d'Images Anciennes</h1>
+            <p>Restaurez et colorisez vos photos anciennes grâce à l'IA</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div class="upload-content" onclick="document.getElementById('fileInput').click()">
+                    <span class="upload-icon">📁</span>
+                    <p>Glissez une image ici ou cliquez pour choisir</p>
+                    <small>JPG, PNG supportés</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox" id="restoreCheck" checked> Restaurer</label>
+            <label><input type="checkbox" id="colorizeCheck" checked> Coloriser</label>
+        </div>
+
+        <button class="btn-process" id="processBtn" disabled>
+            ✨ Traiter l'image
+        </button>
+
+        <div class="loader" id="loader" style="display:none">
+            <div class="spinner"></div>
+            <p>Traitement en cours... (30-60 secondes)</p>
+        </div>
+
+        <div class="results" id="results" style="display:none">
+            <div class="result-box">
+                <h3>Avant</h3>
+                <img id="beforeImg" src="" alt="Avant">
+            </div>
+            <div class="result-box">
+                <h3>Après</h3>
+                <img id="afterImg" src="" alt="Après">
+            </div>
+        </div>
+
+        <button class="btn-download" id="downloadBtn" style="display:none">
+            ⬇️ Télécharger l'image
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
