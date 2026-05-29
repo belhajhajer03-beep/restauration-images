@@ -1,35 +1,38 @@
-# 🖼️ Restauration et Colorisation d'Images Anciennes
+#  Restauration et Colorisation d'Images Anciennes
 
 Application web qui restaure et colorise automatiquement les photos anciennes grâce à l'Intelligence Artificielle.
 
-## 🎥 Démonstration
+##  Démonstration
 
 ![Démo vidéo](demo/demo.mp4)
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 ### Interface principale
 ![Interface](demo/screenshot1.png)
 
-### Résultat avant/après
-![Résultat](demo/screenshot2.png)
+### Image chargée
+![Upload](demo/screenshot2.png)
 
-## 🚀 Technologies utilisées
+### Résultat avant/après
+![Résultat](demo/screenshot3.png)
+
+##  Technologies utilisées
 
 - **Backend** : Python, FastAPI
 - **Frontend** : HTML, CSS, JavaScript
 - **Modèle génératif IA** : ViT-GPT2 (Hugging Face Transformers) — génération automatique de description d'image
 - **Traitement image** : Pillow (restauration + colorisation)
 
-## 🤖 Modèle IA utilisé
+##  Modèle IA utilisé
 
 Le modèle **nlpconnect/vit-gpt2-image-captioning** (Vision Transformer + GPT2) est un modèle génératif qui analyse et décrit automatiquement le contenu des images anciennes.
 
-## ⚙️ Installation et lancement
+##  Installation et lancement
 
 ### Prérequis
 - Python 3.14+
-- Compte Hugging Face (gratuit)
+- Compte Hugging Face 
 
 ### Installation
 
@@ -50,15 +53,15 @@ uvicorn main:app --reload
 ```
 Ouvrir `frontend/index.html` dans le navigateur.
 
-## 📋 Fonctionnalités
+##  Fonctionnalités
 
-- ✅ Upload d'image par clic ou glisser-déposer
-- ✅ Restauration automatique (réduction du bruit, amélioration netteté)
-- ✅ Colorisation automatique
-- ✅ Analyse IA de l'image
-- ✅ Comparaison avant/après
-- ✅ Téléchargement de l'image traitée
+-  Upload d'image par clic ou glisser-déposer
+-  Restauration automatique (réduction du bruit, amélioration netteté)
+-  Colorisation automatique
+-  Analyse IA de l'image
+-  Comparaison avant/après
+-  Téléchargement de l'image traitée
 
-## 👤 Auteur
+##  Auteur
 
 **belhajhajer03-beep**

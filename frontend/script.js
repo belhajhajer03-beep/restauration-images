@@ -74,18 +74,18 @@ processBtn.addEventListener('click', async () => {
                 analysisDiv = document.createElement('div');
                 analysisDiv.id = 'analysis';
                 analysisDiv.style.cssText = `
-                    background: rgba(226,185,111,0.1);
-                    border: 1px solid #e2b96f;
+                    background: rgba(187, 151, 85, 0.1);
+                    border: 1px solidrgb(79, 62, 31);
                     border-radius: 12px;
                     padding: 15px 20px;
                     margin: 15px 0;
-                    color: #e2b96f;
+                    color:rgb(159, 120, 47);
                     font-size: 1rem;
                     line-height: 1.6;
                 `;
                 downloadBtn.before(analysisDiv);
             }
-            analysisDiv.innerHTML = `🤖 <strong>Analyse IA :</strong> ${data.analysis}`;
+            analysisDiv.innerHTML = ` <strong>Analyse IA :</strong> ${data.analysis}`;
         } else {
             alert('Erreur lors du traitement. Réessaie.');
         }
